@@ -5,62 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Diego Canaquiri Panduro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
+    <!-- Fondo Animado Decorativo -->
+    <div class="blob-c"></div>
+    <div class="blob-p"></div>
+
     <header>
-        <div class="container">
-            <img src="img/fondo porta.png" alt="Foto de Diego Canaquiri" class="foto-perfil">
-            <h1>Diego Canaquiri</h1>
-            <p>Estudiante de ingenieria de software con Inteligencia Artificial</p>
+        <div class="tech-bg"></div>
+        <div class="floating-elements">
+            <!-- Iconos de Carrera -->
+            <i class="fab fa-python tech-icon"></i>
+            <i class="fas fa-database tech-icon"></i>
+            <i class="fab fa-android tech-icon"></i>
+            <i class="fas fa-brain tech-icon"></i>
+            <i class="fas fa-network-wired tech-icon"></i>
             
+            <!-- Fragmentos de Código -->
+            <span class="code-snippet">import tensorflow as tf</span>
+            <span class="code-snippet">function calculateIA()</span>
+            <span class="code-snippet">SELECT * FROM users</span>
+            <span class="code-snippet">while(learning) { ... }</span>
+            <span class="code-snippet">git commit -m "Pro"</span>
+        </div>
+        <div class="container">
+            <div class="profile-wrapper">
+                <img src="img/fondo porta.png" alt="Foto de Diego Canaquiri" class="foto-perfil">
+                <div class="pulse-ring"></div>
+            </div>
+            <h1>Diego Canaquiri</h1>
+            <p class="typing-text">Ing. de Software & IA</p>
         </div>
     </header>
 
-
     <nav>
         <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mí</a></li>
+            <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+            <li><a href="#proyectos"><i class="fas fa-laptop-code"></i> Proyectos</a></li>
+            <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
         </ul>
     </nav>
 
-    <section id="sobre-mi" class="section">
-        <h2>Sobre Mí</h2>
-        <p>
-            Soy estudiante de Ingeniería de Software con especialización en Inteligencia Artificial.
-            Cuento con experiencia en desarrollo web utilizando HTML, CSS, JavaScript, PHP y MySQL.
-            Me caracterizo por mi compromiso, organización y capacidad de adaptarme a nuevos retos,
-            buscando siempre crear soluciones funcionales y eficientes que aporten valor real a los usuarios.
-        </p>
-
-        <a href="docs/cv___---diego fernando[1].pdf" class="btn-ver-cv">📄 Ver mi CV</a>
-
+    <section id="sobre-mi" class="section reveal">
+        <h2><i class="fas fa-id-card"></i> Sobre Mí</h2>
+        <div class="card-glass">
+            <p>
+                Soy estudiante de Ingeniería de Software con especialización en Inteligencia Artificial.
+                Cuento con experiencia en desarrollo web utilizando HTML, CSS, JavaScript, PHP y MySQL.
+                Me caracterizo por mi compromiso, organización y capacidad de adaptarme a nuevos retos.
+            </p>
+            <a href="docs/cv___---diego fernando[1].pdf" class="btn-ver-cv">
+                <i class="fas fa-file-download"></i> Descargar CV
+            </a>
+        </div>
     </section>
-    <section id="info-personal" class="section">
+
+    <section id="info-personal" class="section reveal">
         <div class="info-container">
-            
-            <div class="datos-personales">
-                <h2>Datos Personales</h2>
+            <div class="datos-personales card-glass">
+                <h2><i class="fas fa-info-circle"></i> Datos</h2>
                 <ul>
-                    <li><strong>Ubicacion:</strong> Iquitos/Perú</li>
-                    <li><strong>Edad:</strong> 19 años</li>
-                    <li><strong>Nacionalidad:</strong> Peruano</li>
-                    <li><strong>Correo:</strong> canaquiridiego80@gmail.com</li>
+                    <li><strong><i class="fas fa-map-marker-alt"></i></strong> Iquitos/Perú</li>
+                    <li><strong><i class="fas fa-calendar-alt"></i></strong> 20 años</li>
+                    <li><strong><i class="fas fa-flag"></i></strong> Peruano</li>
+                    <li><strong><i class="fas fa-at"></i></strong> canaquiridiego80@gmail.com</li>
                 </ul>
             </div>
 
-
-            <div class="pasatiempos">
-                <h2>Pasatiempos</h2>
+            <div class="pasatiempos card-glass">
+                <h2><i class="fas fa-heart"></i> Pasatiempos</h2>
                 <div class="galeria">
                     <img src="img/futbo img.jpeg" alt="Futbol">
-                    <img src="img/programar img.jpeg" alt="conputadora">
-                    <img src="img/lugar img.jpeg" alt="Pasatiempo 3">
+                    <img src="img/programar img.jpeg" alt="computadora">
+                    <img src="img/lugar img.jpeg" alt="Lugar">
                 </div>
             </div>
         </div>
@@ -111,31 +136,50 @@
         <h2>Proyectos</h2>
         <div class="projects">
             <div class="project-card">
-                <h3>Proyecto de Portafolio</h3>
-                <p>Portafolio web profesional (HTML, CSS, JS + animaciones), Blog con base de datos (PHP/MySQL, Node.js
-                    o Django), Sistema de Gestión de Tareas (login, CRUD, reportes).</p>
+                <h3>eventosYa - Plataforma de Eventos</h3>
+                <p>Aplicación Android para la gestión y descubrimiento de eventos locales. Incluye autenticación con Google, roles de usuario y base de datos en tiempo real.</p>
+                <span class="tech-tag">Kotlin</span> <span class="tech-tag">Jetpack Compose</span> <span class="tech-tag">Firebase</span> <span class="tech-tag">Google Auth</span>
+            </div>
+            <div class="project-card">
+                <h3>SaludQR - Gestión de Citas Médicas</h3>
+                <p>App Android (Kotlin/Jetpack Compose) con Firebase que digitaliza el acceso a salud mediante QR. Incluye gestión de roles, tickets digitales y control de cupos en tiempo real.</p>
+                <span class="tech-tag">Kotlin</span> <span class="tech-tag">Firebase</span> <span class="tech-tag">Jetpack Compose</span>
             </div>
             <div class="project-card">
                 <h3>Sistema de Ventas</h3>
                 <p>Diseño y creación de software de un sistema de ventas 
                     para registrar, gestionar y controlar todo el proceso 
                     de venta de productos o servicios de una empresa.</p>
+                <span class="tech-tag">PHP</span> <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-card">
+                <h3>Portafolio Personal</h3>
+                <p>Diseño y desarrollo de este portafolio web profesional, optimizado para SEO y con navegación fluida.</p>
+                <span class="tech-tag">HTML</span> <span class="tech-tag">CSS</span> <span class="tech-tag">JavaScript</span>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="section">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+    <section id="contacto" class="section reveal">
+        <h2><i class="fas fa-paper-plane"></i> Contacto</h2>
+        <form id="contact-form" class="card-glass">
+            <div class="form-group">
+                <input type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Tu correo" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-ver-cv">
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+            </button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 Diego Canaquiri - Todos los derechos reservados</p>
+        <p>© 2026 Diego Canaquiri - Todos los derechos reservados</p>
     </footer>
 </body>
 
